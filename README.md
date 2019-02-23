@@ -12,7 +12,7 @@ npm install --save shinevent
 ## how to use it
 
 ```
-const {ShinEvent,ShinEventDispatcher} = require('shinEvent')
+import {ShinEvent,ShinEventDispatcher} from 'shinEvent'
 //define a new class which extends from ShinEventDispatcher
 class testTarget extends ShinEventDispatcher{
     constructor(){
