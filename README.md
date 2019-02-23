@@ -12,7 +12,7 @@ npm install --save shinevent
 ## how to use it
 
 ```
-const {ShinEvent,ShinEventDispatcher} = require('../shinEvent')
+const {ShinEvent,ShinEventDispatcher} = require('shinEvent')
 //define a new class which extends from ShinEventDispatcher
 class testTarget extends ShinEventDispatcher{
     constructor(){
@@ -29,12 +29,15 @@ this.handleInit=function(e){
     console.log('i am shinevent');
 }
 //add listener  and set the special function
-//if you duplicate whe same code , only one function could be executed 
-//such as if you coded  like that words as below
-//  target.addEventListener('init',this.handleInit,this)
-//  target.addEventListener('init',this.handleInit,this)
-//  this.handleInit will execute only one time
 target.addEventListener('init',this.handleInit,this)
+```
+if you duplicate  this code , only one function could be executed 
+  such as if you coded words as below
+  target.addEventListener('init',this.handleInit,this)
+  target.addEventListener('init',this.handleInit,this)
+  this.handleInit will execute only one time
+  
+```
 target.init();
 //you will get print of "i am shinevent"
 //remove listener

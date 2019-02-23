@@ -1,6 +1,6 @@
 {
   "name": "shinevent",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "custom event for js",
   "main": "index.js",
   "scripts": {
@@ -10,5 +10,6 @@
     "ShinEvent"
   ],
   "author": "shin <jsgxx00@gmail.com>",
+  "git":"https://github.com/shinku/shinevent",
   "license": "ISC"
 }
