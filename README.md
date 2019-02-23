@@ -7,7 +7,7 @@ you can use it by installing with command
 npm install --save shinevent
 ```
 
-## shinevent
+## how to use it
 
 ```
 const {ShinEvent,ShinEventDispatcher} = require('../shinEvent')
