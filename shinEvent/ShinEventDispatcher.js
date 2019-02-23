@@ -139,4 +139,5 @@ class functionProxy{
     }
 
 }
-module.exports=ShinEventDispatcher;
+export default ShinEventDispatcher;
+//module.exports=ShinEventDispatcher;

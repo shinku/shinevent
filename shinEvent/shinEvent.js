@@ -10,4 +10,5 @@ class ShinEvent{
     }
 
 }
-module.exports=ShinEvent;
+export default ShinEvent;
+//module.exports=ShinEvent;
