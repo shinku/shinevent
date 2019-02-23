@@ -1,5 +1,7 @@
 # shinevent
 
+JavaScript ( ES6 )
+
 custom event class
 
 you can use it by installing with command
