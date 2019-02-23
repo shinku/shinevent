@@ -31,11 +31,17 @@ this.handleInit=function(e){
 //add listener  and set the special function
 target.addEventListener('init',this.handleInit,this)
 ```
-if you duplicate  this code , only one function could be executed 
-  such as if you coded words as below
-  target.addEventListener('init',this.handleInit,this)
-  target.addEventListener('init',this.handleInit,this)
-  this.handleInit will execute only one time
+  
+if you duplicate  this code , only one function could be executed  
+
+such as if you coded words as below  
+
+target.addEventListener('init',this.handleInit,this);  
+
+target.addEventListener('init',this.handleInit,this);  
+  
+this.handleInit will execute only one time  
+
   
 ```
 target.init();
