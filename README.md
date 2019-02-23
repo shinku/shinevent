@@ -12,12 +12,7 @@ npm install --save shinevent
 ## how to use it
 
 ```
-<<<<<<< HEAD
 const {ShinEvent,ShinEventDispatcher} = require('shinEvent')
-=======
-const {ShinEvent,ShinEventDispatcher} = require('../shinEvent')
-
->>>>>>> edb4f959ad3d8935d4966b78f0b5436572f8a497
 //define a new class which extends from ShinEventDispatcher
 class testTarget extends ShinEventDispatcher{
     constructor(){
@@ -27,15 +22,12 @@ class testTarget extends ShinEventDispatcher{
         this.dispatchEvent(new ShinEvent('init'));
     }
 }
-
 //create a new testTarget as target
 let target=new testTarget();
-
 //define call back function at object 'this'
 this.handleInit=function(e){
     console.log('i am shinevent');
 }
-<<<<<<< HEAD
 //add listener  and set the special function
 target.addEventListener('init',this.handleInit,this)
 ```
@@ -46,23 +38,10 @@ if you duplicate  this code , only one function could be executed
   this.handleInit will execute only one time
   
 ```
-=======
-
-//  add listener  and set the special function
-//  if you duplicate whe same code , only one function could be executed 
-//  such as if you coded   as below
-//  target.addEventListener('init',this.handleInit,this)
-//  target.addEventListener('init',this.handleInit,this)
-//  this.handleInit will execute only one time
-target.addEventListener('init',this.handleInit,this)
-
->>>>>>> edb4f959ad3d8935d4966b78f0b5436572f8a497
 target.init();
 //you will get print of "i am shinevent"
-
 //remove listener
 target.removeEventListener('init',this.handleInit,this);
-
 
 target.init();
 //you will get nothing
