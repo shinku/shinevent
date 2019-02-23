@@ -1,0 +1,14 @@
+{
+  "name": "shinevent",
+  "version": "1.0.0",
+  "description": "custom event for js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ShinEvent"
+  ],
+  "author": "shin <jsgxx00@gmail.com>",
+  "license": "ISC"
+}
