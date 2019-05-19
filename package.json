@@ -1,15 +1,26 @@
 {
   "name": "shinevent",
-  "version": "2.0.0",
+  "version": "2.1.6",
   "description": "custom event for js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "npx babel index.js shinEvent --out-file index.lib.js"
   },
   "keywords": [
     "ShinEvent"
   ],
+  "babel": {
+    "presets":["es2015","stage-3"],
+    "plugins": []
+  },
   "author": "shin <jsgxx00@gmail.com>",
-  "git":"https://github.com/shinku/shinevent",
-  "license": "ISC"
+  "git": "https://github.com/shinku/shinevent",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1"
+  }
 }
