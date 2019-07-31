@@ -4,7 +4,8 @@ class ShinEvent{
      * @memberof ShinEvent
      */
     constructor(eventtype,bubblingType){
-        this.content=null;
+        this.currentTarget=null;
+        this.data=this.content=null;
         this.eventType=eventtype || "shinevent"+Date.now();
         this.bubblingType=bubblingType=1;
     }

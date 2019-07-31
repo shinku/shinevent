@@ -1,6 +1,6 @@
 {
   "name": "shinevent",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "description": "custom event for js",
   "main": "index.js",
   "scripts": {

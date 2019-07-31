@@ -13,6 +13,7 @@ class ShinEventDispatcher{
     dispatchEvent(event){
         
         
+        event.currentTarget=this;
         let eventType=event.eventType;
         let functions=this.funPool.get(eventType);
         //evert proxy execute its function
